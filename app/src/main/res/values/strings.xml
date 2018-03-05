@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DaggerDemo</string>
+    <string name="input_user_name">输入用户名</string>
+    <string name="bt_search">查询</string>
+    <string name="nick_name">昵称:%1$s</string>
+    <string name="company">公司:%1$s</string>
+    <string name="blog">博客:%1$s</string>
+    <string name="cancel">取消 </string>
+    <string name="confirm">确定</string>
+</resources>
