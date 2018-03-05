@@ -14,9 +14,6 @@ import com.demo.longzongjia.daggerdemo.di.moudle.AppMoudle;
 import com.demo.longzongjia.daggerdemo.di.moudle.UtilsModule;
 import com.demo.longzongjia.daggerdemo.utils.ThemeHelper;
 
-import javax.inject.Inject;
-
-
 /**
  * Created by longzongjia on 2018/2/25.
  */

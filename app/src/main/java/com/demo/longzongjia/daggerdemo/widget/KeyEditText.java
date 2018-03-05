@@ -6,10 +6,6 @@ import android.view.KeyEvent;
 
 import com.bilibili.magicasakura.widgets.TintEditText;
 
-/**
- * @author xyczero
- * @time 16/5/23
- */
 public class KeyEditText extends TintEditText {
     private KeyPreImeListener mKeyPreImeListener;
 
