@@ -1,5 +1,7 @@
 package com.demo.longzongjia.daggerdemo.mvp.presenter;
 
+import android.app.Activity;
+
 import com.demo.longzongjia.daggerdemo.mvp.model.entity.Follows;
 import com.demo.longzongjia.daggerdemo.mvp.model.entity.GithubUser;
 import com.demo.longzongjia.daggerdemo.mvp.impl.MainContract;
@@ -25,8 +27,8 @@ public class Mainpresenter implements MainContract.IPresenter {
     MainModel mainModel;
 
     @Inject
-    public Mainpresenter(MainContract.IView mainView) {
-        this.mainView = mainView;
+    public Mainpresenter(Activity mainView) {
+        this.mainView = (MainContract.IView) mainView;
     }
 
 

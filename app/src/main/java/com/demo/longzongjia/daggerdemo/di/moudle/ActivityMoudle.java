@@ -1,7 +1,10 @@
 package com.demo.longzongjia.daggerdemo.di.moudle;
 
-import com.demo.longzongjia.daggerdemo.di.scope.PreActivity;
-import com.demo.longzongjia.daggerdemo.mvp.impl.MainContract;
+
+
+import android.app.Activity;
+
+import com.demo.longzongjia.daggerdemo.di.scope.PerActivity;
 
 import dagger.Module;
 import dagger.Provides;
@@ -11,15 +14,15 @@ import dagger.Provides;
  */
 @Module
 public class ActivityMoudle {
-    private MainContract.IView mView;
+    private Activity mView;
 
-    public ActivityMoudle(MainContract.IView mView) {
+    public ActivityMoudle(Activity mView) {
         this.mView = mView;
     }
 
     @Provides
-    @PreActivity
-    MainContract.IView provideMainActivity(){
+    @PerActivity
+    Activity provideActivity() {
         return mView;
     }
 }

@@ -34,4 +34,5 @@ public class MainContract {
 
         Observable<ArrayList<Follows>> getFowllows(String nickname);
     }
+
 }

@@ -3,7 +3,7 @@ package com.demo.longzongjia.daggerdemo.di.moudle;
 import android.app.Activity;
 import android.app.Fragment;
 
-import com.demo.longzongjia.daggerdemo.di.scope.PreFragment;
+import com.demo.longzongjia.daggerdemo.di.scope.PerFragment;
 
 import dagger.Module;
 import dagger.Provides;
@@ -20,7 +20,7 @@ public class FragmentModule {
     }
 
     @Provides
-    @PreFragment
+    @PerFragment
     public Activity provideActivity() {
         return fragment.getActivity();
     }
